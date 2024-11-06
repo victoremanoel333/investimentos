@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Vídeos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .video {
+            background-color: white;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .video iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+        }
+        .titulo {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .descricao {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .link {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .link:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Catálogo de Vídeos</h1>
+    <p>Confira os vídeos abaixo:</p>
+</header>
+
+<div class="catalogo">
+
+    <!-- Vídeo 1 -->
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/t02GRAEVz1k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="titulo">Vídeo 1: Exemplo de Vídeo 1</div>
+        <div class="descricao">Este é um exemplo de vídeo. Confira o conteúdo interessante que ele apresenta.</div>
+        <a href="https://youtu.be/t02GRAEVz1k" class="link" target="_blank">Assistir no YouTube</a>
+    </div>
+
+    <!-- Vídeo 2 -->
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/t2U3KZs6PcY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="titulo">Vídeo 2: Exemplo de Vídeo 2</div>
+        <div class="descricao">Neste vídeo, você verá outra demonstração interessante de conteúdo.</div>
+        <a href="https://youtu.be/t2U3KZs6PcY" class="link" target="_blank">Assistir no YouTube</a>
+    </div>
+
+</div>
+
+</body>
+</html>
